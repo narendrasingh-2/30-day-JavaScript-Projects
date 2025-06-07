@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="./output.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Click to change the bg color</h1>
-    <button id="changeColor">Change color</button>
+  <div class="flex flex-col h-screen items-center justify-center text-white ease-in-out gap-5">
+    <h1 class="text-black text-3xl font-medium">Click to change the bg color</h1>
+    <button id="changeColor" class="px-6 py-3 text-xl bg-white border-0 cursor-pointer rounded-xl shadow-md text-black">Change Background Color</button>
     <script src="./script.js"></script>
   </div>
 </body>
