@@ -8,16 +8,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-  <div class="container">
-    <h1>Counter</h1>
-    <div id="counter">0</div>
-    <div class="buttons">
-      <button id="decrease">Decrease</button>
-      <button id="reset">Reset</button>
-      <button id="increase">Increase</button>
+  <div class="bg-[#2eec71] flex items-center justify-center h-screen">
+    <div class="text-center bg-white p-20 rounded-2xl shadow-md">
+      <h1 class="mb-5 text-black text-4xl">Counter</h1>
+      <div id="counter" class="text-5xl mb-6">0</div>
+      <div class="flex flex-row items-center justify-center gap-8">
+        <button id="decrease" class="px-5 py-2.5 text-base border-0 cursor-pointer transition-opacity text-white rounded-md shadow-md hover:shadow-lg bg-red-600 hover:bg-red-500">Decrease</button>
+        <button id="reset" class="px-5 py-2.5 text-base border-0 cursor-pointer transition-opacity text-white rounded-md shadow-md hover:shadow-lg bg-yellow-400 hover:bg-yellow-300">Reset</button>
+        <button id="increase" class="px-5 py-2.5 text-base border-0 cursor-pointer transition-opacity text-white rounded-md shadow-md hover:shadow-lg bg-green-600 hover:bg-green-500">Increase</button>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
